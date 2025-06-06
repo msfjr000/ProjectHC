@@ -5,7 +5,3 @@ const api = axios.create({
 })
 
 export default api
-
-
-// Username: mario
-// Password: kdAVuhApG5Us0bgS
