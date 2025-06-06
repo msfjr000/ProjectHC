@@ -1,0 +1,62 @@
+textarea {
+    resize: none;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    border-radius: 5px;
+}
+#form {
+    width: 45vw;
+    padding: 20px;
+    background-color: rgb(252, 252, 252);
+    margin-top: 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formTitle {
+    color: rgb(27, 27, 27);
+    font-family: "Nunito", sans-serif;
+}
+#divTitle, #divResp, #divTime, #divDate{
+    display: flex;
+    gap: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+#labelDescription {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+input {
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+    width: 1000px;
+}
+input:focus {
+    outline: 1px solid black;
+} 
+textarea:focus {
+    outline: 1px solid black;
+}
+@media (max-width: 768px) {
+    #form {
+        width: 50vw;
+    }
+    main {
+        width: 100vw;
+    }
+}
+@media (max-width: 425px) {
+    #form {
+        width: 100vw;
+        margin-top: 50px;
+    }
+
+}

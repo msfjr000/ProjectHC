@@ -1,0 +1,52 @@
+#containerClock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-inline: 40px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main h1 {
+    font-size: 2.5rem;
+}
+#pageTitle {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 300px;
+    margin-inline: 40px;
+}
+
+@media (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        width: 100vw;
+    }
+    #containerClock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #containerInside {
+        height: 100px;
+        width: auto;
+    }
+}
+@media (max-width: 425px) {
+    #pageTitle {
+        margin-top: 200px;
+    }
+}
